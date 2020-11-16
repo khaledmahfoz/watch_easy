@@ -1,0 +1,27 @@
+.Modal{
+   /* border: 1px solid var(--red); */
+   background: var(--white);
+   /* padding: 2rem; */
+   color: var(--dark);
+   /* text-align: center; */
+   /* width: 100%; */
+   /* max-width: 500px; */
+   /* position: absolute; */
+   /* top: 0; */
+   /* left: 50%; */
+   /* z-index: 9999; */
+   /* transform: translateX(-50%) translateY(-100%); */
+   /* transition: 0.2s; */
+}
+.ActiveModal{
+   transform: translateX(-50%) translateY(300px);
+}
+.Backdrop{
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.4);
+   z-index: 9999;
+}

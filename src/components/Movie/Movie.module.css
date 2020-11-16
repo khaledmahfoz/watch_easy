@@ -1,0 +1,67 @@
+.Movie{
+   position: relative;
+   margin: 1rem auto;
+   max-width: 400px;
+   cursor: pointer;
+   overflow: hidden;
+}
+.Movie .Movie_Info{
+   background-color: black;
+   position: absolute;
+   top: 20px;
+   left: 10px;
+   padding: 0 0.5rem;
+   padding-bottom: 0.5rem;
+   border-radius: 20px;
+   color: var(--white);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: translateX(calc(-100% - 10px));
+   transition: 0.2s;
+}
+.Movie .Movie_Info div:first-of-type{
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+.Movie 
+.Img{
+   transition: 0.2s;
+   position: relative;
+   width: 100%;
+   height: 450px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 5px;
+   background-position: top center;
+}
+.Movie:hover .Img{
+   transform: scale(1.1);
+}
+.Movie:hover .Info div{
+   transform: translateY(-20px);
+}
+.Movie:hover .Movie_Info{
+   transform: translateX(10px);
+}
+.Info{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+}
+.Info div{
+   transition: 0.2s;
+   width: 100%;
+   margin-bottom: 0;
+   font-size: 18px;
+   padding: 6rem 1rem 2rem;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   background: linear-gradient(to top,#141631,#0000);
+   /* background: linear-gradient(to top, #032f0d, #28a74500); */
+}

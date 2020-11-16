@@ -1,0 +1,6 @@
+.NowPlaying{
+   margin-bottom: 100px;
+   padding: 4rem 0;
+   background-color: var(--secondaryColor);
+   color: var(--white);
+}

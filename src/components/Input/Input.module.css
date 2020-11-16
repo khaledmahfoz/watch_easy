@@ -1,0 +1,44 @@
+.List_Container{
+   position: relative;
+   color: var(--white);
+}
+.Movies_List{
+   position: absolute;
+   top: calc(100% + 5px);
+   left: 0;
+   width: 100%;
+   /* height: auto; */
+   background-color: var(--green);
+   padding: 1rem 0;
+   border-radius: 5px;
+   z-index: 9;
+   max-height: 320px;
+   overflow: hidden;
+}
+.Movies_ListItem{
+   transition: 0.1s;
+   padding: 1rem;
+   text-align: left;
+   cursor: pointer;
+}
+.Movies_ListItem:hover{
+   background-color: forestgreen;
+}
+
+.Input{
+   width: 100%;
+   border: 2px solid var(--green);
+   padding: 0.7rem 1rem;
+   border-radius: 5px;
+   background-color: var(--primeColor);
+   color: var(--green);
+}
+.Input:hover, .Input:active, .Input:focus{
+   outline: transparent;
+}
+.Spinner{
+   position: absolute;
+   right: 15px;
+   top: 50%;
+   transform: translateY(-50%);
+}

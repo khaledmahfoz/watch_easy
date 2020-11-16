@@ -1,0 +1,36 @@
+.MovieDetail{
+   margin: 2rem;
+}
+.Detail_Img_Wrapper{
+   max-width: 400px;
+   margin-bottom: 3rem;
+}
+.Title{
+   font-size: 3rem;
+   line-height: 1.2;
+   text-align: left;
+}
+.Details{
+   margin: 5rem 0;
+}
+.Details_Img{
+   height: 600px;
+   background-size: cover;
+   background-position: top;
+   margin-bottom: 2rem;
+}
+.Details_Info{
+   text-align: left;
+}
+.Rating{
+   margin-top: 1rem;
+   text-align: left;
+}
+@media(max-width: 576px){
+   .Details_Img{
+      height: 500px;
+   }
+   .Detail_Img_Wrapper, .Details_Img{
+      max-width: 100% !important;
+   }
+}
