@@ -12,7 +12,7 @@ import useFetch from '../../customHooks/useFetch';
 const MovieDetail = () => {
    const {id} = useParams();
 
-   const [loadingState, movieState] = useFetch(`/movie/${id}`, [id]);
+   const [loadingState, movieState] = useFetch(`/movie/${id}`, id);
 
    return (
       loadingState

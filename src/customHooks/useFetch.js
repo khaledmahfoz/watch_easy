@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 
-const useFetch = (url, condition = []) => {
+const useFetch = (url, condition) => {
    const [loadingState, changeLoadingState] = useState(false);
    const [dataState, changeDataState] = useState(null);
 
